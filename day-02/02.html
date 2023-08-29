@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>where to write javascript code</title>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hellow JavaScript"
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Here is Day-02</h1>
+    <p>Now we are Going to learn where we can write Javascript in Html file</p>
+    <p id="demo">This Paragraph change into "Hellow JavaScript" by calling it through the button</p>
+    <button type="button" onclick="myFunction()">Click Here !</button>
+
+
+    <!--Here We Can Write JavaScript Code in Bet Ween Script Tag-->
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p id="one">This Paragraph change into "Hellow Second Paragraph"</p>
+    <button type="button" onclick="myPrograme()">Click Here For Call Paragraph 2</button>
+    <script>
+        function myPrograme() {
+            document.getElementById("one").innerHTML = "Hellow Second Paragraph";
+        }
+        // let x = "vinay"
+        // let y = "vijay"
+        // let z = "age" 
+        
+    </script>
+    <button type="button" onclick="window.print()">Click Here For Print</button>
+</body>
+
+</html>

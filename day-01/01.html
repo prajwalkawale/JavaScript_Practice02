@@ -5,6 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .butt{
+            display:inline-block;
+            height: 400px;
+            width: 100%;
+        }
+        #myImg{
+            margin-top:105px;
+            position:relative;
+            left:400px;
+        }
+         .three{
+            position:relative;
+            left: 150px;
+            top: 50px;
+            margin-top: 150px;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,9 +30,32 @@
     <p id="demo">JavaScript can change Html into "Hellow Javascript"</p>
     <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hellow JavaScript'">Click Here
         !</button>
-    <img id="myImg" src="./bulb_off.jpg" style="height: 200px; width: 200px;">
-    <button type="button" onclick="document.getElementById('myImg').src='bulb_on.jpg'">Click Here For On Bulb</button>
-    <button type="button" onclick="document.getElementById('myImg').src='bulb_off.jpg'">Click Here For Off Bulb</button>
+    <div class="butt">
+        <img id="myImg" src="./bulb_off.jpg" style="height: 200px; width: 200px;">
+        <button class="three" type="button" onclick="document.getElementById('myImg').src='bulb_on.jpg'">Click Here For On
+            Bulb</button>
+        <button class="three" type="button" onclick="document.getElementById('myImg').src='bulb_off.jpg'">Click Here For
+            Off
+            Bulb</button>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <p id="one">"Hellow Html" we can change hellow html into Hellow JavaScript</p>
+    <button type="button" onclick="document.getElementById('one').innerHTML = 'Hellow JavaScript'"> Click Here for
+        JavaScript !</button>
+    <button type="button" onclick="document.getElementById('one').innerHTML ='Hellow HTML'">Click For HTML</button>
+    <hr>
+    <br>
+    <p id="two">Hellow Programmer</p>
+    <button type="button" onclick="document.getElementById('two').style.fontSize='45px'">Increase in Size</button>
+    <button type="button" onclick="document.getElementById('two').style.fontSize='15px'">Decrease in Size</button>
+    </div>
+    <hr>
+    <br>
+    <h1>The paragraph will visible while click on button</h1>
+    <p id="paregraph" style="display:none;">Hellow Paragraph</p>
+    <button type="button" onclick="document.getElementById('paragraph').style.display='block'">Click Here!</button>
 </body>
 
 </html>
