@@ -26,7 +26,34 @@ let b = 12;
 // let c = a >= b;------------Greater than value or equal to [ true ]
 
 //  let c = a <= b;---------------Less than value or equal to [false ]
-console.log(c);
+// console.log(c);
 
+let x = 5 ;
+x++;
+let z = x ;
+console.log(z); // increment 
 
+let c = 5 ;
+let d = 5**3;
+console.log(d); // exponantial 
+console.log(Math.pow( c , 2)) // for getting exponantial value we can use this one also method 
+
+let e = 5 ;
+e--;
+let f = e ;
+console.log(f); // decrement 
+
+let ab =true;
+console.log(typeof(ab));
+ab =null;
+console.log(typeof(ab));
+ab = null ;
+console.log(ab);
+ab = undefined;
+console.log(typeof(ab));
+
+let gender;
+console.log(gender?true : false);
+gender = "male";
+console.log(gender?true:false);
 
