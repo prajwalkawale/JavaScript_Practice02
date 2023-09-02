@@ -26,6 +26,7 @@
     <br>
     <p id="one">This Paragraph change into "Hellow Second Paragraph"</p>
     <button type="button" onclick="myPrograme()">Click Here For Call Paragraph 2</button>
+    <p id="five"></p>
     <script>
         function myPrograme() {
             document.getElementById("one").innerHTML = "Hellow Second Paragraph";
@@ -42,6 +43,14 @@
              var hostNumber = 4 + 5 ;
              let a = [ 1,2,3,4,5];
              console.timeEnd("hostNumber",hostNumber)
+
+
+            function myClass(boy,girl){
+                return boy * girl ;
+            }
+            let total = myClass(4 ,6 );
+            document.getElementById("five").innerHTML = total ;
+
     </script>
     <button type="button" onclick="window.print()">Click Here For Print</button>
 </body>

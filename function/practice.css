@@ -1,0 +1,40 @@
+
+
+.main{
+    margin-top:100px;
+    margin-left: 40%;
+    border: 2px solid black;
+    height: 300px;
+    width:100px;
+    background-color: dimgrey;
+}
+#one{
+    margin-top: 10px;
+    background-color:red;
+    margin-left:5px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+}
+#two{
+    margin-top: 5px;
+    background-color: yellow;
+    margin-left:5px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+}
+#three{
+    margin-top:10px;
+    background-color:blue;
+    margin-left:5px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+}
+
+#four{
+    margin-top:20px;
+    margin-left:100px;
+    width:100px;
+}

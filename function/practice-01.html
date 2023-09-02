@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./practice.css">
+</head>
+
+<body>
+    <div class="main">
+        <div id="one"><button id="four" type="button" onclick="myFirstbotton()">click here</button></div>
+        <div id="two"><button id="four" type="button" onclick="mySecondbotton()">click here</button></div>
+        <div id="three"><button id="four" type="button" onclick="myThirdbotton()">click here</button></div>
+    </div>
+    <script>
+        function myFirstbotton(){
+            document.getElementById("one").style.backgroundColor="green";
+        }
+        function mySecondbotton(){
+            document.getElementById("two").style.backgroundColor="pink";
+        }
+        function myThirdbotton(){
+            document.getElementById("three").style.backgroundColor="orange";
+        }
+    </script>
+</body>
+
+</html>
