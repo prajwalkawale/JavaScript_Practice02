@@ -57,3 +57,7 @@ console.log(gender?true : false);
 gender = "male";
 console.log(gender?true:false);
 
+function myFunction(){
+    let sam = "topper";
+}
+console.log(myFunction());
