@@ -61,3 +61,6 @@ function myFunction(){
     let sam = "topper";
 }
 console.log(myFunction());
+
+let todayDate = "Today's Date is "
+console.log(todayDate+Date());

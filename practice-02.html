@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <p id="demo"></p>
+    <p id="two"></p>
     <script>
-        function myStudent(){
+        function myStudent() {
             let student_1 = "Hello";
             let student_2 = "Clay";
-            console.log("there are two students",student_1 , student_2);
+            console.log("there are two students", student_1, student_2);
         }
         myStudent();
-       
+
+        // objects 
+        const person = {
+            firstName: "Clay",
+            lastName: "Jenson",
+            age: 50,
+            "skin color": "White",
+
+            // the following function are called anonymous function 
+            fullName: function () {
+                return this.firstName + " " + this.lastName + " " + this.age;
+            }
+        }
+        console.log(person.lastName);
+        console.log(person["firstName"]);
+        console.log(person["skin color"]); // square brackets used for such kind of values which have space in between or written in string method
+
+        // we can call anonymouse function as like following 
+        document.getElementById("demo").innerHTML = person.fullName();
+
+        function todayDay(){
+            document.getElementById("two").innerHTML = Date();
+        }
     </script>
+    <button type="button" onclick="todayDay()">Check Date And Time!</button>
 </body>
+
 </html>
