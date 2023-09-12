@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replace_method</title>
+</head>
+<body>
+    <h1>Replace string in javascript</h1>
+    <p id="one"></p>
+    <p id="demo">Hello Javascript</p>
+    <button type="button" onclick="myChanges()">this button for global changes</button>
+    <p id="three">AAAAAA , BBABBB , CCCACCC , DDDADDDD</p>
+    <button type="button" onclick="myFunction()">click here!</button>
+    <script>
+        let one = "Hello i am a PROGRAMMER currently working on javascript"
+        document.getElementById("one").innerHTML = one.replace("PROGRAMMER","STUDENT");
+
+        function myFunction(){
+            let text = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML = text.replace("Javascript","MICROSOFT"); // replace method is case sensitive
+        }
+
+        let $_1 = "Hello MICROSOFT";
+        console.log("Case sensitive::",$_1.replace(/MICROSOFT/i,"microsoft")); // due to the i flag we can change word with irrespective its spelling by using it.
+    </script>
+
+    <!--Replace Global Matches-->
+
+    <script>
+        function myChanges(){
+            let $_2 = document.getElementById("three").innerHTML;
+            document.getElementById("three").innerHTML = $_2.replace(/A/g , "Z");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice_method</title>
+</head>
+
+<body>
+    <h1>Slice method extract the part of string and return in new string.</h1>
+    <p id="one"></p>
+    <script>
+        let one = "Tiago , Maruti , KIA , HondaCity";
+        document.getElementById("one").innerHTML = one.slice(0, 5); // Numbering start from zero 
+        console.log(one.slice(7)); // if we skip to give second parameter then it will return remaining part of string from position which we would give in first position 
+
+        // if we give negative value to the parameter then javascript count it from end of the position 
+
+        // Negative Value 
+        let two = "Tiago , Maruti , KIA , HondaCity";
+        console.log(two.length)
+        console.log(two.slice(-10)); // javascript count the position from end of the part.
+
+        // SubString Method 
+
+        let three = "Tiago , Maruti , KIA , HondaCity";
+        console.log(three.substring(7,15)); // Substring Method almost work like a slice method but in case of negative value it will not give output
+        console.log(three.substring(7));
+        //NEGATIVE VALUE 
+
+        console.log("NEGATIVE VALUE::",three.substring(-10)); // it will return the whole value insted of write write hondacity 
+
+        // substr() METHOD 
+
+        let four = "Tiago , Maruti , KIA , HondaCity";
+        console.log("substr()::",four.substr(7,7)); // second parameter returns by it string length 
+
+        console.log("SECOND PARAMETER TEST::", four.substr(16,4)) // it will print KIA 
+
+        </script>
+</body>
+
+</html>
