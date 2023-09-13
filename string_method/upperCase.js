@@ -17,3 +17,10 @@ myFunction();
 let $_4 = "Hello";
 let $_5 = "JavaScript";
 console.log($_4.concat(" ",$_5));
+
+//REPLACE ALL 
+
+let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+text = text.replaceAll("cats","dog"); // first value change here 
+text = text.replaceAll("Cats","Dog"); // second value change here 
+console.log(text);
