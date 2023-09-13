@@ -12,6 +12,8 @@
     <button type="button" onclick="myChanges()">this button for global changes</button>
     <p id="three">AAAAAA , BBABBB , CCCACCC , DDDADDDD</p>
     <button type="button" onclick="myFunction()">click here!</button>
+    <p id="five">I love cats. Cats are very easy to love. Cats are very popular.</p>
+    <button type="button" onclick="myReplacement()">replace Cats into dog</button>
     <script>
         let one = "Hello i am a PROGRAMMER currently working on javascript"
         document.getElementById("one").innerHTML = one.replace("PROGRAMMER","STUDENT");
@@ -31,6 +33,21 @@
         function myChanges(){
             let $_2 = document.getElementById("three").innerHTML;
             document.getElementById("three").innerHTML = $_2.replace(/A/g , "Z");
+        }
+    </script>
+
+    <!--ReplaceAll-->
+    <script>
+        // let text ="I love cats. Cats are very easy to love. Cats are very popular.";
+        // text = text.replaceAll("cats","dogs");
+        // text= text.replaceAll("Cat","Dog");
+        // document.getElementById("five").innerHTML = text;
+
+        function myReplacement(){
+            let changes$ = "I love cats. Cats are very easy to love. Cats are very popular.";
+            changes$ = changes$.replaceAll("cats","dog");
+            changes$ = changes$.replaceAll("Cat", "Dog");
+            document.getElementById("five").innerHTML = changes$ ;
         }
     </script>
 </body>
