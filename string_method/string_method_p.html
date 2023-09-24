@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <script>
+        let text = "Banana , mango , apple , kiwi";
+        let finaltext = text.slice(0,14);
+        let lastFruit = text.slice(-13,-1);
+        console.log("LastFruit::",lastFruit);
+        document.getElementById("two").innerHTML = lastFruit.slice(-13,-6);
+        document.getElementById("one").innerHTML = finaltext;
+
+        // SUBSTRING METHOD WILL NOT COUNT NEGATIVE VALUE 
+
+        // THE LAST INDEX NOT INCLUDE WHILE IT COUNT IN BOTH THE METHODS 
+
+        let text1 ="Banana ,mango , apple , kiwi";
+        let text2 = text1.substring(-6); // it will not work in substring ;
+        document.getElementById("three").innerHTML = text2; // it will print whole fruits 
+        let text3 = text1.substring(0,8);
+        console.log("text3::",text3);
+
+
+        let person = "Rahul plays cricket.";
+        let omitperson= person.slice(0,10);
+        console.log("person::", omitperson);
+
+
+        // SUBSTR() METHOD 
+        // SUBSTR() METHOD INCLUDE SECOND PARAMETER AS THE LENGTH OF THE STRING WHICH WE WANT TO OMIT
+
+        let Substrmethod1 = person.substr(6,5);
+        console.log("substr::",Substrmethod1);
+    </script>
+</body>
+</html>
