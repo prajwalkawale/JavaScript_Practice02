@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <p id="four"></p>
+    <p id="five"></p>
+    <p id="six"></p>
+    <p id="seven"></p>
+    <p id="eight"></p>
+    <script>
+        // INCLUDES METHOD
+
+
+        // "INCLUDE METHOD WORK LIKE AS SEARCH , 
+        //IT WILL SEARCH THE CHARECTOR WHICH IS GIVEN INTO THE BRACKETS :: IF THAT CHARECTOR WILL PRASENT THEN IT WILL GIVE YOU RESULT THROUGH BOOLEANS.
+        // INCLUDE METHOD IS CASE SENSITIVE
+        let text = "Hello JavaScript";
+
+        let text1 = text.includes("hay");
+
+        let text2 = text.includes("Hello");
+
+        let text3 = text.includes("llo");
+
+        document.getElementById("one").innerHTML = text1;
+
+        document.getElementById("two").innerHTML = text2;
+
+        document.getElementById("three").innerHTML = text3;
+
+        // startWith method is same as the include method : it can also find charector from the start position 
+        // startWith method is also casesensitive
+
+        let text4 = text.startsWith("Hello");
+        document.getElementById("four").innerHTML =text4;
+        console.log(text.startsWith("javaScript"));
+
+
+        //endsWith method will search from the end 
+
+        let text5 = text.endsWith("JavaScript");
+        console.log("EndsWith::",text5);
+        document.getElementById("five").innerHTML=text5 ;
+
+
+        // SEARCH METHOD IS WRITE THE INDEX NUMBER OF THE STRING WHICH WE WANT TO SEARCH 
+
+        let text6 = text.search("Java");
+        console.log("SEARCH METHOD::",text6);
+
+        console.log("WHAR IS THE INDEX OF JAVASCRIPT STRING::",text.search("Script"));
+
+        console.log("if the given string is not available in the variable then it will give -1 index::",text.search("Microsoft"));
+
+        document.getElementById("six").innerHTML= text6;
+    </script>
+</body>
+
+</html>
