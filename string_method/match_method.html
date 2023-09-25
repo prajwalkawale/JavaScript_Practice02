@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <p id="four"></p>
+    <p id="five"></p>
+    <p id="six"></p>
+    <p id="seven"></p>
+    <p id="eight"></p>
+    <p id="nine"></p>
+    <p id="ten"></p>
+    <script>
+        //MATCH method will find the matches with the string and give its output inthe form of array 
+
+        let text = "one one one two two two three three four four five five six";
+        let text1 = text.match(/one/g);
+
+        console.log("Match::",text1);
+        document.getElementById("one").innerHTML =text1;
+        console.log(typeof(text1));
+
+        // INDEX of method will return the index of the string 
+
+        let text2 = text.indexOf("two");
+        document.getElementById("two").innerHTML=text2;
+
+        let text3 = text.lastIndexOf("one");
+        console.log("lastIndexOf::",text3);
+        document.getElementById("three").innerHTML= text3;
+
+
+        // REPLACE METHOD IN JAVASCRIPT
+
+        text4= text.replace(/three/g,"THREE");
+        document.getElementById("four").innerHTML = text4;
+
+        // charAt method returen the value with taking it's index value 
+
+        text5= text.charAt("5");
+        console.log("charAt::",text5);
+        document.getElementById("five").innerHTML = text5;
+
+        // charCodeAt write the value of its unicode 
+
+        text6= text.charCodeAt(5);
+        console.log(text6);
+        document.getElementById("six").innerHTML = text6;
+
+        // FromCharector code 
+        // fromCharCode it will write the charector code which we write 
+        // there is no need to have perticular string for this propertie
+
+        text7 =String.fromCharCode(97);
+        console.log(text7);
+
+        // SPLIT method in javascript :: it will give output in array form .
+
+        text8 = text.split(" ");
+        console.log("SPLIT::",text8);
+        document.getElementById("seven").innerHTML= text8;
+    </script>
+</body>
+</html>
